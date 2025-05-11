@@ -11,5 +11,10 @@ public:
 	deal_cards(basic_card_list& bc_list);//基类拷贝
 	deal_cards(deal_cards& dc);//拷贝构造函数
 	~deal_cards();//析构函数
+	int remain();//剩余牌数	
+	bool is_tail();//是否指向最后一张牌
+	bool is_head() const;//是否指向第一张牌
+	int extract(int num_of_cards, card* outlist);//抽取指定张数的牌
+	void anew(); //重新洗牌
 };
 
